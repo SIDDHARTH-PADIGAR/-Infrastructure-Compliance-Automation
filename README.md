@@ -2,6 +2,9 @@
 
 This project focuses on automating compliance management for AWS infrastructure using Terraform. The objective is to ensure that your AWS resources conform to specific security and operational standards, helping you maintain a secure and compliant environment. 
 
+![chatuml-diagram (5)](https://github.com/user-attachments/assets/d5d3ec22-8f72-431d-bf5f-82b56748420c)
+
+
 ## Key Goals:
 
 - **S3 Bucket Encryption**: This component ensures that all S3 buckets are configured with server-side encryption using the AES256 algorithm. Encryption protects data at rest, preventing unauthorized access and ensuring data confidentiality.
