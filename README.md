@@ -1,21 +1,13 @@
 # Infrastructure Compliance Automation
 
-## Project Overview
+This project focuses on automating compliance management for AWS infrastructure using Terraform. The objective is to ensure that your AWS resources conform to specific security and operational standards, helping you maintain a secure and compliant environment. 
 
-This project aims to automate the compliance of AWS infrastructure using Terraform. The focus is on enforcing compliance rules such as ensuring S3 buckets are encrypted and restricting security group access.
+## Key Goals:
 
-## Prerequisites
+- **S3 Bucket Encryption**: This component ensures that all S3 buckets are configured with server-side encryption using the AES256 algorithm. Encryption protects data at rest, preventing unauthorized access and ensuring data confidentiality.
 
-Before you begin, ensure you have the following:
+- **Security Group Configuration**: The project includes the creation and management of security groups with carefully defined rules. This involves:
+  - **Restricted SSH Access**: Configuring security group rules to limit SSH access to specific IP addresses, reducing the risk of unauthorized access.
+  - **Controlled Outbound Traffic**: Setting up rules to allow or restrict outbound traffic, ensuring that only necessary communications are permitted.
 
-- **Terraform**: [Install Terraform](https://www.terraform.io/downloads)
-- **AWS CLI**: [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
-- **AWS Credentials**: Configure your AWS credentials using environment variables, AWS CLI, or IAM roles.
-
-## Project Setup
-
-### Clone the Repository
-
-```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/SIDDHARTH-PADIGAR/-Infrastructure-Compliance-Automation.git)
-cd your-repo-name
+By implementing these compliance rules, the project helps to automate the enforcement of security best practices and regulatory requirements, reducing manual configuration errors and improving overall infrastructure security.
